@@ -1,0 +1,111 @@
+/*
+  File: cs.uml.edu/~bmichaud/HW3/index.html
+  COMP.4610 Assignment: Homework 3: Style a Site with External CSS
+  Brendan Michaud, UMass Lowell 
+  Email: Brendan_Michaud@student.uml.edu
+  Brief Description: The goal of this assignment was to use CSS to rearrange a webpage by referencing a screenshot provided
+	without editing a HTML file.
+  Date: 9-29-2020
+*/
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/* Set Background to gradient image, Set the width and min-width Set Width and Color*/
+body {
+	width: 80%;
+	color: #666666;
+	min-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	background-attachment: fixed;
+	background-image: url('images/ptrbackground.jpg');
+}
+/* Set background image of header to sunset and set it to the right of the header. Added background color to blend in the sunset 
+to the rest of the header and set so it doesnt repeat the image*/
+header {
+	color: #FFFFFF;
+	background-color: #000033;
+	background-position: right;
+	background-repeat: no-repeat;
+	/* Header background image */
+	background-image: url("images/sunset.jpg");
+}
+/* Controls the list i.e. Home... Yurts... */
+nav ul {
+	float: left;
+	margin-left:-1em;
+	font-size: 1.2em;
+	/* Make font bold */
+	font-weight:bolder;
+	/* no bullet points  */
+	list-style-type: none;
+}
+#wrapper {
+	/*side bar clor to light blue*/
+	background-color: lightblue;
+}
+
+h1 {
+	padding: 10px;
+	margin-bottom: 0;
+}
+/*Color for nav links*/
+nav a {
+	color: #223a6e;
+	
+}
+/* If you hover over list item becomes white*/
+nav a:hover {
+	color: #FFFFFF;
+}
+/* No underline*/
+nav a:link {
+	text-decoration: none;
+}
+/*color of the words Enjoy Nature in Luxury*/ 
+h2 {
+	color: #3399CC;
+}
+/*Both h1 and h2 fonts*/
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+/*color and bold to the words Enjoy Nature in Luxury*/ 
+.resort {
+	font-weight: bold;
+	color: #2d6399;
+}
+/*added padding to Enjoy Nature in Luxury< section and bullet points with marker.gif*/
+#content {
+	padding-left:25px;
+	padding-top: 1px;
+	list-style-position: inside;
+	list-style-image: url("images/marker.gif");
+}
+/*padding to marker.gif and float left so they appear as bullet points*/
+#content img {
+	float: left;
+	padding-right: 30px;
+}
+
+
+#content, footer {
+	margin-left: 188px;
+	padding-left: 40px;
+	background-color: #FFFFFF;
+}
+
+/* padding and margin for Copyright and email link*/
+footer {
+	padding-top: 25px;
+	margin-left: 188px;
+	padding-bottom: 25px;
+	font-size: small;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", serif;
+}

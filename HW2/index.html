@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--
+      Name: Brendan Michaud
+      Email: brendan_michaud@student.uml.edu
+      Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
+      Date: 9/9/2020
+      Description: First HTML website
+      Location: ~/bmichaud/public_html/hw2.html
+      91.461 Assignment: Creating Your First Web Page
+      Brendan Michaud, UMass Lowell Computer Science,
+      Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
+      freely copied or excerpted for educational purposes with credit to the author.
+      -->
+  <title>My First HTML Page using CSS</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- intro class to seperate from rest of page-->
+  <section class="intro">
+    <h3>
+      Welcome to my Website
+    </h3>
+    <h3>My name is Brendan Michaud</h3>
+  </section>
+<!--aboutme class to seperate from rest of page -->
+  <div class="container">
+    <section class="aboutme">
+      <h3> About Me:</h3>
+      <p>Im a Computer Science Major that transferred from Northern Essex Community College.<br>
+        I am from Tewksbury Massachusetts and went to Shawsheen Valley Technical High School for Electronics<br>
+        I enjoy going to car shows and listening to Music<br>
+        I am currently a Junior
+      </p>
+    </section>
+    </div>
+    <br>
+
+    <h3>Top Albums</h3>
+    <!-- Links for albums -->
+    <p> <a href="https://www.youtube.com/watch?v=45cYwDMibGo&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME">
+        <img src="images/abby_road.jpg" class="album beat" alt="Beatles"></a></p>
+    <p><a href="https://www.youtube.com/watch?v=GXmkU5Sv7tc"><img src="images/vu.jpg" class="album vel" alt="Vu"></a></p>
+    <p> <a href="https://www.youtube.com/watch?v=_NzoZ_5HLXg&list=PL4EItsGsS1SlQpi7Lxw_QvuLk46Psl0fI"><img src="images/lg.png"
+          class="album lag" alt="LAG"></a></p>
+    <div class="sidenav">
+      <!-- uml logo anf link for wabsite-->
+      <p> <a href="https://www.uml.edu/">
+          <img src="images/UMass-Lowell-logo.png" alt="umllogo"></a></p>
+          <!-- sidelink class for current and future projects-->
+      <div class="sidelinks">
+        <p><a href="https://github.com/BMichaud7/GUIHW1">HW 1 - Intro </a> </p>
+
+        <p><a href="https://github.com/BMichaud7/GUIHW2">HW 2 - HTML Basics</a> </p>
+
+        <p><a href="#hw3">HW 3 - CSS Basics </a> </p>
+
+        <p><a href="#hw4">HW 4 - Bootstrap </a> </p>
+
+        <p><a href="#hw5">HW 5 - Javascript</a> </p>
+
+        <p><a href="#hw6">HW 6 - jQuery Part 1</a> </p>
+
+        <p><a href="#hw7">HW 7 - jQuery Part 2</a> </p>
+
+        <p><a href="#hw8">HW 8 - Final Project</a> </p>
+
+      </div>
+    </div>
+    <!-- footer that includes github and w3 validator-->
+    <footer class="footer">
+      <p>GITHUB
+        <a href="https://github.com/BMichaud7">
+          <br>
+          <img src="images/github.png" alt="GITHUB" class="GIT" />
+        </a>
+      </p>
+      <p>Copyright &copy; 2020 by Brendan Michaud. All rights reserved.
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <br>
+          <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+        </a>
+      </p>
+    </footer>
+</body>
+
+</html>
