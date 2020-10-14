@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="navbar-brand" href="https://www.github.com/bmichaud7">
+            <img src="./image/github.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Github
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            GUI Projects
+          </a>
+          <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="www.github.com/BMichaud7/GUIHW1">HW1</a>
+            <a class="dropdown-item" href="https://cs.uml.edu/~bmichaud/HW2/index.html">HW2</a>
+            <a class="dropdown-item" href="https://cs.uml.edu/~bmichaud/HW3/index.html">HW3</a>
+            <a class="dropdown-item" href="#">HW4</a>
+            <a class="dropdown-item" href="#">HW5</a>
+            <a class="dropdown-item" href="#">HW6</a>
+            <a class="dropdown-item" href="#">HW7</a>
+            <a class="dropdown-item" href="#">HW8</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Other Projects
+          </a>
+          <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://github.com/BMichaud7/Computer-Security-Project">Secure Drop</a>
+            <a class="dropdown-item" href="https://github.com/BMichaud7/Computer-Security-Extra-Credit-1">Password
+              Cracker</a>
+
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="navbar-brand text-right" href="https://www.linkedin.com/in/brendan-michaud/">
+            <img src="./image/linkedin.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Linkedin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand text-right"
+            href="https://docs.google.com/gview?url=https://github.com/BMichaud7/resume/raw/main/Brendan%20Michaud%20resume%202020_10_01.pdf&embedded=true">
+            <img src="./image/resume.png" width="30" height="35" class="d-inline-block align-top" alt="">
+            Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- About me section -->
+
+      <div class="container-fluid">
+        <div class="row equal">
+          <!-- Depending on screen size adjust properly with each different column size. -->
+          <div class="col-xs-12 col-sm-12 col-md-6 ">
+            <!-- Create panel with title and content inside panel -->
+            <div class="panel panel-primary" height="50%" width="50%">
+              <div class="panel-heading">
+                <h1 class="panel-title">About me</h1>
+              </div>
+              <div class="panel-body">
+                <p class="lead"> My name is Brendan Michaud and i'm a Computer Science Major that transferred from
+                  Northern Essex Community College.<br>
+                  I am from Tewksbury Massachusetts and went to Shawsheen Valley Technical High School for
+                  Electronics<br>
+                  I enjoy going to Car shows and listening to Music<br>
+                  I am currently a Junior/Senior. I anticipate to graduate December 2021</p>
+              </div>
+              <!--Panel-body collapse -->
+            </div> <!-- panel panel-primary collapse -->
+          </div> <!-- About me column collapse -->
+
+          <!-- Second part of first row. Will contain a list of cs courses I've taken along with links to each description of each course -->
+
+          <!-- Depending on screen size adjust properly with each different column size. -->
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h1 class="panel-title">Cs Courses I've Taken</h1>
+              </div> <!-- panel-heading collapse -->
+              <!-- Since I used a panel on my about me, I decided to keep the style of having panels and included a list group in the panel. I gave the list-group the color "success" because I succesfully completed these courses. -->
+              <div class="list-group">
+                <li class="list-group-item text-center d-inline-block bg-dark ">Computing 1-4 </li>
+                <li class="list-group-item text-center d-inline-block bg-dark ">Assembly Language Programming</li>
+                <li class="list-group-item text-center d-inline-block bg-dark ">Computer Architecture</li>
+                <li class="list-group-item text-center d-inline-block bg-dark ">Organization of Programming Languages
+                </li>
+
+
+              </div> <!-- list collapse -->
+            </div> <!-- panel panel-primary collapse -->
+          </div> <!-- column collapse -->
+        </div> <!-- Row collapse -->
+      </div> <!-- Container collapse -->
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center">
+              <img src="./image/IMG_0960.JPG" class="pic">
+              <div class="carousel-caption d-none d-md-block caption">
+                <p>Its a Metaphor</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <img src="./image/IMG_1241.JPG" class="pic">
+              <div class="carousel-caption d-none d-md-block caption">
+                <p>Deer Island</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <img src="./image/IMG_1631.JPG" class="pic">
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <img src="./image/IMG_2510.JPG" class="pic">
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <img src="./image/IMG_2582.JPG" class="pic">
+
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <br>
+      <hr />
+      <br>
+      <div id="carouselalbum" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselalbum" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselalbum" data-slide-to="1"></li>
+          <li data-target="#carouselalbum" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center">
+              <a href="https://www.youtube.com/watch?v=45cYwDMibGo&list=OLAK5uy_k2JcEE3_maNjnVBKU2s1JjhaZ4rxwgaME"><img
+                  src="./image/abby_road.jpg" class="album beat"></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <a href="https://www.youtube.com/watch?v=GXmkU5Sv7tc"><img src="./image/vu.jpg" class="album vel"
+                  alt="Vu"></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <a href="https://www.youtube.com/watch?v=_NzoZ_5HLXg&list=PL4EItsGsS1SlQpi7Lxw_QvuLk46Psl0fI"><img
+                  src="./image/lg.png" class="album lag" alt="LAG"></a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselalbum" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselalbum" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br>
+      <hr />
+      <br>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
