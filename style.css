@@ -1,4 +1,4 @@
-/*      Name: Brendan Michaud
+/*    Name: Brendan Michaud
       Email: brendan_michaud@student.uml.edu
       Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
       Date: 9/9/2020
@@ -10,70 +10,54 @@
       freely copied or excerpted for educational purposes with credit to the author.
 */
 body {
-    background-color: darkgray;
-  }
-  
-  h1,h3 {
-    color: rgb(4, 58, 4);
-    text-align: center;
-    font-family: "Amatic SC"
-  }
-  h4 {
-    color: rgb(2, 70, 2);
-    text-align: center
-  }
-  h2 {
-    color: white;
-    text-align: center
-  }
-  p {
-    color: rgb(4, 58, 4);
-    text-align: center;
-    font-family: "Amatic SC";
-    font-size: x-large;
-  
-     
-  }
+  background-color: darkgray;
+}
 
-  /*sidenav from w3schools https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp*/
-  
-    /* album art size and border color*/
-  img.album {
-    
-    border:0;
-    width:50%;
-    height:50%;
-  
-    
-  }
-  img.pic {
-    
-    
-    width:75%;
-    height:75%;
-  
-    
-  }
+h1,
+h3 {
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC";
+}
+h4 {
+  color: rgb(2, 70, 2);
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+p {
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC";
+  font-size: x-large;
+}
 
-  img.lag {
+/* album art size and border color*/
+img.album {
+  border: 0;
+  width: 50%;
+  height: 50%;
+}
+img.pic {
+  width: 75%;
+  height: 75%;
+}
 
-    border: 10px solid navy;
-    
-  }
-  img.beat {
-    
-    border: 10px solid darkgreen;
-    
-  }
-  img.vel {
-    
-    border: 10px solid yellow;
-    
-  }
+img.lag {
+  border: 10px solid navy;
+}
+img.beat {
+  border: 10px solid darkgreen;
+}
+img.vel {
+  border: 10px solid yellow;
+}
 /* controls GIT image size sections */
-img.GIT{
-  width:50px;
-  height:50x
+img.GIT {
+  width: 50px;
+  height: 50x;
 }
 /* controls about me sections */
 .aboutme {
@@ -83,68 +67,69 @@ img.GIT{
   padding-left: 15px;
 }
 
-.aboutme p{
- color: white;
+.aboutme p {
+  color: white;
 }
-.aboutme h3{
-  color: white
+.aboutme h3 {
+  color: white;
 }
-
 
 /* This container will wrap around all sections */
 .container {
   width: 50%;
   margin: auto;
 }
-s
-.navbar-nav > li > .dropdown-menu a:link,
-.navbar-nav > li > .dropdown-menu a:hover { background-color: gray;}
-.carousel{
+s .navbar-nav > li > .dropdown-menu a:link,
+.navbar-nav > li > .dropdown-menu a:hover {
+  background-color: gray;
+}
+.carousel {
   margin: 20px;
 }
 .carousel-caption p {
   font-family: "Amatic SC";
   font-size: 2em;
   color: white !important;
-  }
-  .carousel-control-prev, .carousel-control-next {
-    top: 20%;
-    bottom: 20%;
-  }
-  .carousel .carousel-indicators li {
-    background-color: #fff;
-    background-color: rgba(70, 70, 70, 0.25);
-  }
-  
-  .carousel .carousel-indicators .active {
-    background-color: rgba(70, 70, 70, 0.466);
-  }
-  hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(4, 58, 4, 0.13);
-  }
-  .dropdown-menu{
-    background-color: gray;
-    color: rgb(4, 58, 4);
-    text-align: center;
-    font-family: "Amatic SC";
-    font-size: 30px;
-  }
-  .nav-link{
-    color: rgb(4, 58, 4);
-    text-align: center;
-    font-family: "Amatic SC";
-    font-size: 25px;
-  }
-  .navbar-brand{
-    color: rgb(4, 58, 4);
-    font-family: "Amatic SC";
-    font-size: 25px;
-  }
-  .list-group-item{
-    font-family: "Amatic SC";
-    font-size: 25px;
-    color: gray;
-  } 
+}
+.carousel-control-prev,
+.carousel-control-next {
+  top: 20%;
+  bottom: 20%;
+}
+.carousel .carousel-indicators li {
+  background-color: #fff;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: rgba(70, 70, 70, 0.466);
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(4, 58, 4, 0.13);
+}
+.dropdown-menu {
+  background-color: gray;
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC";
+  font-size: 30px;
+}
+.nav-link {
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC";
+  font-size: 25px;
+}
+.navbar-brand {
+  color: rgb(4, 58, 4);
+  font-family: "Amatic SC";
+  font-size: 25px;
+}
+.list-group-item {
+  font-family: "Amatic SC";
+  font-size: 25px;
+  color: gray;
+}
