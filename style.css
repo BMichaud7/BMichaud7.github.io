@@ -1,13 +1,16 @@
-/*    Name: Brendan Michaud
+/*    <!--
+      Name: Brendan Michaud
       Email: brendan_michaud@student.uml.edu
       Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
-      Date: 9/9/2020
-      Description: First HTML website with CSS
-      Location: ~/bmichaud/public_html/hw2.html
-      91.461 Assignment: Creating Your First Web Page
+      Date: 10/15/2020
+      Description: First HTML website
+      Location: ~/bmichaud/public_html/index.html and ~/bmichaud/public_html/style.css 
+      Github: https://bmichaud7.github.io/
+      91.461 Assignment: Bootstrap and GitHub
       Brendan Michaud, UMass Lowell Computer Science,
       Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
       freely copied or excerpted for educational purposes with credit to the author.
+      -->
 */
 body {
   background-color: darkgray;
@@ -17,7 +20,7 @@ h1,
 h3 {
   color: rgb(4, 58, 4);
   text-align: center;
-  font-family: "Amatic SC";
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;;
 }
 h4 {
   color: rgb(2, 70, 2);
@@ -30,21 +33,22 @@ h2 {
 p {
   color: rgb(4, 58, 4);
   text-align: center;
-  font-family: "Amatic SC";
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;;
   font-size: x-large;
 }
 
-/* album art size and border color*/
+/* album art size*/
 img.album {
   border: 0;
   width: 50%;
   height: 50%;
 }
+/*Picture size on first carousel*/
 img.pic {
   width: 75%;
   height: 75%;
 }
-
+/*Album boarder color to match color on album artwork*/
 img.lag {
   border: 10px solid navy;
 }
@@ -79,57 +83,63 @@ img.GIT {
   width: 50%;
   margin: auto;
 }
-s .navbar-nav > li > .dropdown-menu a:link,
-.navbar-nav > li > .dropdown-menu a:hover {
-  background-color: gray;
-}
+/* This container will wrap around all sections */
 .carousel {
   margin: 20px;
 }
+/* This container controls the carousel-caption color, size and text font */
 .carousel-caption p {
-  font-family: "Amatic SC";
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;;
   font-size: 2em;
   color: white !important;
 }
+/* This container controls the carousel next and back button size */
 .carousel-control-prev,
 .carousel-control-next {
   top: 20%;
   bottom: 20%;
 }
+/* This container controls the carousel indicators */
 .carousel .carousel-indicators li {
   background-color: #fff;
   background-color: rgba(70, 70, 70, 0.25);
 }
-
+/* This container controls the carousel indicators */
 .carousel .carousel-indicators .active {
   background-color: rgba(70, 70, 70, 0.466);
 }
+/* This container controls the horizontal divider color and size */
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(4, 58, 4, 0.13);
 }
+/* This container controls the dropdown color and size of text and background */
 .dropdown-menu {
   background-color: gray;
   color: rgb(4, 58, 4);
   text-align: center;
-  font-family: "Amatic SC";
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;;
   font-size: 30px;
 }
+/* This container controls the nav bar links color and size of text */
 .nav-link {
   color: rgb(4, 58, 4);
   text-align: center;
-  font-family: "Amatic SC";
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;;
   font-size: 25px;
 }
+/* This container controls the nav bar brand color and size of text.
+A brand is Linkedin, Resume and Github links. Its called a brand because of the attached images or logos*/
 .navbar-brand {
   color: rgb(4, 58, 4);
-  font-family: "Amatic SC";
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;;
   font-size: 25px;
 }
+/* This container controls the "Computer Science Courses Taken" list text color."*/
 .list-group-item {
-  font-family: "Amatic SC";
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;;
   font-size: 25px;
-  color: gray;
+  color: whitesmoke;
 }
