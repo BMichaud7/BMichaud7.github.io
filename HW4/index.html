@@ -1,20 +1,45 @@
+<!--
+      Name: Brendan Michaud
+      Email: brendan_michaud@student.uml.edu
+      Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
+      Date: 10/15/2020
+      Description: First HTML website
+      Location: ~/bmichaud/public_html/index.html and ~/bmichaud/public_html/style.css 
+      Github: https://bmichaud7.github.io/
+      91.461 Assignment: Bootstrap and GitHub
+      Brendan Michaud, UMass Lowell Computer Science,
+      Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
+      freely copied or excerpted for educational purposes with credit to the author.
+      -->
 <!DOCTYPE HTML>
+<!-- Using starting template from: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+ 
+   <!-- Character set for the page -->
   <meta charset="utf-8">
+  <!-- Description of website -->
+  <meta name="description" content="Assignment index using Bootstrap">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Page  title -->
+  <title>Bootstrap Website</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--Google Fonts used import-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic SC">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab">
+   <!-- External CSS. -->
   <link rel="stylesheet" href="style.css" />
+  <!--Javascrpit for carousel-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-
+<!-- Contains the page content -->
 <body>
+   <!-- Navbar with logo and social media links and projects links. 
+         Source: https://getbootstrap.com/docs/4.0/components/navbar/ -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -24,12 +49,14 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <!-- Nav bar list to hold links and project drop downs-->
         <li class="nav-item">
           <a class="navbar-brand" href="https://www.github.com/bmichaud7">
             <img src="./image/github.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Github
           </a>
         </li>
+        <!-- GUI Project drop down-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -45,6 +72,7 @@
             <a class="dropdown-item" href="#">HW7</a>
             <a class="dropdown-item" href="#">HW8</a>
         </li>
+        <!-- Other projects drop down-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -60,6 +88,7 @@
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
+        <!-- Another list to hold linked in and Resume links so they are on the left-->
         <li class="nav-item">
           <a class="navbar-brand text-right" href="https://www.linkedin.com/in/brendan-michaud/">
             <img src="./image/linkedin.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -76,16 +105,18 @@
       </ul>
     </div>
   </nav>
+  
   <!-- About me section -->
 
       <div class="container-fluid">
         <div class="row equal">
-          <!-- Depending on screen size adjust properly with each different column size. -->
+          <!-- adjusts depending on screen size -->
           <div class="col-xs-12 col-sm-12 col-md-6 ">
-            <!-- Create panel with title and content inside panel -->
+            <!-- Panel with title and content inside panel -->
             <div class="panel panel-primary" height="50%" width="50%">
               <div class="panel-heading">
                 <h1 class="panel-title">About me</h1>
+                <br>
               </div>
               <div class="panel-body">
                 <p class="lead"> My name is Brendan Michaud and i'm a Computer Science Major that transferred from
@@ -95,19 +126,17 @@
                   I enjoy going to Car shows and listening to Music<br>
                   I am currently a Junior/Senior. I anticipate to graduate December 2021</p>
               </div>
-              <!--Panel-body collapse -->
-            </div> <!-- panel panel-primary collapse -->
-          </div> <!-- About me column collapse -->
+            </div> 
+          </div> 
 
-          <!-- Second part of first row. Will contain a list of cs courses I've taken along with links to each description of each course -->
+          <!-- Second part of first row for course list -->
 
-          <!-- Depending on screen size adjust properly with each different column size. -->
+           <!-- adjusts depending on screen size -->
           <div class="col-xs-12 col-sm-12 col-md-6">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h1 class="panel-title">Cs Courses I've Taken</h1>
-              </div> <!-- panel-heading collapse -->
-              <!-- Since I used a panel on my about me, I decided to keep the style of having panels and included a list group in the panel. I gave the list-group the color "success" because I succesfully completed these courses. -->
+                <h1 class="panel-title">Computer Science Courses Taken</h1>
+              </div> 
               <div class="list-group">
                 <li class="list-group-item text-center d-inline-block bg-dark ">Computing 1-4 </li>
                 <li class="list-group-item text-center d-inline-block bg-dark ">Assembly Language Programming</li>
@@ -116,13 +145,14 @@
                 </li>
 
 
-              </div> <!-- list collapse -->
-            </div> <!-- panel panel-primary collapse -->
-          </div> <!-- column collapse -->
-        </div> <!-- Row collapse -->
-      </div> <!-- Container collapse -->
-      <br>
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+       <!--  carousel to display pictures my friend has taken. carousels from w3s-->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- carousel selector 0-4 for 5 images-->
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -167,6 +197,7 @@
             </div>
           </div>
         </div>
+        <!-- button for carousel-->
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -176,11 +207,13 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
+      <!-- -->
       <br>
       <hr />
       <br>
+       <!--  carousel to display albums I with clickable links -->
       <div id="carouselalbum" class="carousel slide" data-ride="carousel">
+        <!-- carousel selector 0-2 for 3 images-->
         <ol class="carousel-indicators">
           <li data-target="#carouselalbum" data-slide-to="0" class="active"></li>
           <li data-target="#carouselalbum" data-slide-to="1"></li>
