@@ -4,6 +4,7 @@
       Date: 10/15/2020
       Description: First HTML website
       Location: ~/bmichaud/public_html/index.html and ~/bmichaud/public_html/style.css 
+      Location for HW2 :https://cs.uml.edu/~bmichaud/HW2/index.html
       Github: https://bmichaud7.github.io/
       91.461 Assignment: Bootstrap and GitHub
       Brendan Michaud, UMass Lowell Computer Science,
