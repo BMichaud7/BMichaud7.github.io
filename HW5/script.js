@@ -19,10 +19,10 @@ function calc() {
   var XStop_inputBox = document.getElementById("X_stop");
   var YStart_inputBox = document.getElementById("Y_start");
   var YStop_inputBox = document.getElementById("Y_stop");
-  var invalidChars = ["-", "+", "e"];
+  var invalidChars = ["+", "e"];
 
   XStart_inputBox.addEventListener("input", function () {
-    this.value = this.value.replace(/[e\+\-]/gi, "");
+    this.value = this.value.replace(/[e\+]/gi, "");
   });
 
   XStart_inputBox.addEventListener("keydown", function (e) {
@@ -31,7 +31,7 @@ function calc() {
     }
   });
   XStop_inputBox.addEventListener("input", function () {
-    this.value = this.value.replace(/[e\+\-]/gi, "");
+    this.value = this.value.replace(/[e\+]/gi, "");
   });
 
   XStop_inputBox.addEventListener("keydown", function (e) {
@@ -40,7 +40,7 @@ function calc() {
     }
   });
   YStart_inputBox.addEventListener("input", function () {
-    this.value = this.value.replace(/[e\+\-]/gi, "");
+    this.value = this.value.replace(/[e\+]/gi, "");
   });
 
   YStart_inputBox.addEventListener("keydown", function (e) {
@@ -49,7 +49,7 @@ function calc() {
     }
   });
   YStop_inputBox.addEventListener("input", function () {
-    this.value = this.value.replace(/[e\+\-]/gi, "");
+    this.value = this.value.replace(/[e\+]/gi, "");
   });
 
   YStop_inputBox.addEventListener("keydown", function (e) {
