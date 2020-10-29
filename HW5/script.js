@@ -3,9 +3,9 @@
       Email: brendan_michaud@student.uml.edu
       Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
       Date: 10/29/2020
-      Description: First HTML website
-      Location: ~/bmichaud/public_html/HW5/js/script.js
-      Github: https://bmichaud7.github.io/HW5/js/script.js
+      Description: First Javascript website
+      Location: ~/bmichaud/public_html/HW5/script.js
+      Github: https://bmichaud7.github.io/HW5/script.js
       91.461 Assignment: Creating an Interactive Dynamic Table
       Brendan Michaud, UMass Lowell Computer Science,
       Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
@@ -14,31 +14,84 @@
 */
 //One function does everything
 function calc() {
-  var X_start = Number(document.getElementById("X_start").value);
-  var X_stop = Number(document.getElementById("X_stop").value);
-  var Y_start = Number(document.getElementById("Y_start").value);
-  var Y_stop = Number(document.getElementById("Y_stop").value);
+  //https://stackoverflow.com/questions/39291997/how-to-block-e-in-input-type-number Blocks e,+,-
+  var XStart_inputBox = document.getElementById("X_start");
+  var XStop_inputBox = document.getElementById("X_stop");
+  var YStart_inputBox = document.getElementById("Y_start");
+  var YStop_inputBox = document.getElementById("Y_stop");
+  var invalidChars = [
+    "-",
+    "+",
+    "e",
+  ];
+  
+  XStart_inputBox.addEventListener("input", function() {
+    this.value = this.value.replace(/[e\+\-]/gi, "");
+  });
+  
+  XStart_inputBox.addEventListener("keydown", function(e) {
+    if (invalidChars.includes(e.key)) {
+      e.preventDefault();
+    }
+  });
+  XStop_inputBox.addEventListener("input", function() {
+    this.value = this.value.replace(/[e\+\-]/gi, "");
+  });
+  
+  XStop_inputBox.addEventListener("keydown", function(e) {
+    if (invalidChars.includes(e.key)) {
+      e.preventDefault();
+    }
+  });
+  YStart_inputBox.addEventListener("input", function() {
+    this.value = this.value.replace(/[e\+\-]/gi, "");
+  });
+  
+  YStart_inputBox.addEventListener("keydown", function(e) {
+    if (invalidChars.includes(e.key)) {
+      e.preventDefault();
+    }
+  });
+  YStop_inputBox.addEventListener("input", function() {
+    this.value = this.value.replace(/[e\+\-]/gi, "");
+  });
+  
+  YStop_inputBox.addEventListener("keydown", function(e) {
+    if (invalidChars.includes(e.key)) {
+      e.preventDefault();
+    }
+  });
+    
+  var X_start = Number(XStart_inputBox.value);
+  var X_stop = Number(XStop_inputBox.value);
+  var Y_start = Number(YStart_inputBox.value);
+  var  Y_stop = Number(YStop_inputBox.value);
   var format = "";
   var swapped_X = false;
   var swapped_Y = false;
   // https://stackoverflow.com/questions/4059147/check-if-a-variable-is-a-string-in-javascript Check if var is string
-  if (typeof X_start === "string" || X_start instanceof String) {
-    format += "<p>String Entered which is Unsupported.</p>";
+  //////
+  if (X_start % 1 != 0) {
+    format += "<p>Number was rounded down.</p><br>";
+    X_start = Math.floor(X_start)
     $("#multi").html(error_format);
     return;
   }
-  if (typeof X_stop === "string" || X_stop instanceof String) {
-    format += "<p>String Entered which is Unsupported.</p>";
+  if (X_stop % 1 != 0) {
+    format += "<p>Number was rounded down.</p><br>";
+    X_stop = Math.floor(X_stop)
     $("#multi").html(error_format);
     return;
   }
-  if (typeof Y_start === "string" || Y_start instanceof String) {
-    format += "<p>String Entered which is Unsupported.</p>";
+  if (Y_start % 1 != 0){
+    format += "<p>Number was rounded down.</p><br>";
+    Y_start = Math.floor(Y_start)
     $("#multi").html(error_format);
     return;
   }
-  if (typeof Y_stop === "string" || Y_stop instanceof String) {
-    format += "<p>String Entered which is Unsupported.</p>";
+  if (Y_stop % 1 != 0){
+    format += "<p>Number was rounded down.</p><br>";
+    Y_stop = Math.floor(Y_stop)
     $("#multi").html(error_format);
     return;
   }
