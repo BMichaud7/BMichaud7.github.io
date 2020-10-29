@@ -19,53 +19,49 @@ function calc() {
   var XStop_inputBox = document.getElementById("X_stop");
   var YStart_inputBox = document.getElementById("Y_start");
   var YStop_inputBox = document.getElementById("Y_stop");
-  var invalidChars = [
-    "-",
-    "+",
-    "e",
-  ];
-  
-  XStart_inputBox.addEventListener("input", function() {
+  var invalidChars = ["-", "+", "e"];
+
+  XStart_inputBox.addEventListener("input", function () {
     this.value = this.value.replace(/[e\+\-]/gi, "");
   });
-  
-  XStart_inputBox.addEventListener("keydown", function(e) {
+
+  XStart_inputBox.addEventListener("keydown", function (e) {
     if (invalidChars.includes(e.key)) {
       e.preventDefault();
     }
   });
-  XStop_inputBox.addEventListener("input", function() {
+  XStop_inputBox.addEventListener("input", function () {
     this.value = this.value.replace(/[e\+\-]/gi, "");
   });
-  
-  XStop_inputBox.addEventListener("keydown", function(e) {
+
+  XStop_inputBox.addEventListener("keydown", function (e) {
     if (invalidChars.includes(e.key)) {
       e.preventDefault();
     }
   });
-  YStart_inputBox.addEventListener("input", function() {
+  YStart_inputBox.addEventListener("input", function () {
     this.value = this.value.replace(/[e\+\-]/gi, "");
   });
-  
-  YStart_inputBox.addEventListener("keydown", function(e) {
+
+  YStart_inputBox.addEventListener("keydown", function (e) {
     if (invalidChars.includes(e.key)) {
       e.preventDefault();
     }
   });
-  YStop_inputBox.addEventListener("input", function() {
+  YStop_inputBox.addEventListener("input", function () {
     this.value = this.value.replace(/[e\+\-]/gi, "");
   });
-  
-  YStop_inputBox.addEventListener("keydown", function(e) {
+
+  YStop_inputBox.addEventListener("keydown", function (e) {
     if (invalidChars.includes(e.key)) {
       e.preventDefault();
     }
   });
-    
+
   var X_start = Number(XStart_inputBox.value);
   var X_stop = Number(XStop_inputBox.value);
   var Y_start = Number(YStart_inputBox.value);
-  var  Y_stop = Number(YStop_inputBox.value);
+  var Y_stop = Number(YStop_inputBox.value);
   var format = "";
   var swapped_X = false;
   var swapped_Y = false;
@@ -73,25 +69,25 @@ function calc() {
   //////
   if (X_start % 1 != 0) {
     format += "<p>Number was rounded down.</p><br>";
-    X_start = Math.floor(X_start)
+    X_start = Math.floor(X_start);
     $("#multi").html(error_format);
     return;
   }
   if (X_stop % 1 != 0) {
     format += "<p>Number was rounded down.</p><br>";
-    X_stop = Math.floor(X_stop)
+    X_stop = Math.floor(X_stop);
     $("#multi").html(error_format);
     return;
   }
-  if (Y_start % 1 != 0){
+  if (Y_start % 1 != 0) {
     format += "<p>Number was rounded down.</p><br>";
-    Y_start = Math.floor(Y_start)
+    Y_start = Math.floor(Y_start);
     $("#multi").html(error_format);
     return;
   }
-  if (Y_stop % 1 != 0){
+  if (Y_stop % 1 != 0) {
     format += "<p>Number was rounded down.</p><br>";
-    Y_stop = Math.floor(Y_stop)
+    Y_stop = Math.floor(Y_stop);
     $("#multi").html(error_format);
     return;
   }
@@ -145,7 +141,7 @@ function calc() {
   console.log(array_2d);
   // Format the table
   // Formating source https://stackoverflow.com/questions/20748770/creating-html-table-from-multidimensional-javascript-array
-  // Could use append or just create a string. 
+  // Could use append or just create a string.
   // add to string the X's numbers x start to x stop
   // format is string that gets printed to multi class in html.
   format += "<table><tr><td>X --> </td>";
