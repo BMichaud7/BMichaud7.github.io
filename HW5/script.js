@@ -124,16 +124,16 @@ function calc() {
   var Y_index = Y_start;
   var X_length = Math.abs(X_stop - X_start);
   var Y_length = Math.abs(Y_stop - Y_start);
-  for (var x = 0; x <= Y_length; x++) {
+  for (var i = 0; i <= Y_length; i++) {
     var array_temp = [];
-    for (var y = 0; y <= X_length; y++) {
-      // Calculate the given spot in the multiplication table.
+    for (var j = 0; j <= X_length; j++) {
+      // Calcs value of x * y
       var calc = X_index * Y_index;
-      array_temp[y] = calc;
+      array_temp[j] = calc;
       X_index++;
     }
     // Load edited array to 2d array row by row
-    array_2d[x] = array_temp;
+    array_2d[i] = array_temp;
     X_index = X_start; // set to start at end of every loop/ row
     Y_index++; //inc row number
   }
@@ -156,10 +156,10 @@ function calc() {
   // For each row add the Y num aka Y start to Y stop to the start.
   // Then we add the the number we calc to be the answer Ynumth and Xnumth. This is our result we at to the
   // <td> </td> i.e. the table cell.
-  for (var Y_num = 0; Y_num <= Y_length; Y_num++) {
+  for (var i = 0; i <= Y_length; i++) {
     format += "<tr><td>" + Y_index + "</td>";
-    for (var y = 0; y <= X_length; y++) {
-      format += "<td>" + array_2d[Y_num][y] + "</td>";
+    for (var j = 0; j <= X_length; j++) {
+      format += "<td>" + array_2d[i][j] + "</td>";
     }
     Y_index++;
     // Close  the ith row.
