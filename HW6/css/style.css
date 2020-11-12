@@ -181,8 +181,11 @@ input {
   border: 2px solid orange;
 }
 /* error messages */
-#errmsg1, #errmsg2, #errmsg3, #errmsg4{
+#errmsg1,
+#errmsg2,
+#errmsg3,
+#errmsg4 {
   color: red;
   font-family: "Amatic SC", Arial, Helvetica, sans-serif;
-  text-align:center;
+  text-align: center;
 }
