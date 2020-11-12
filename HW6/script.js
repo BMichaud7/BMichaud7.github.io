@@ -152,6 +152,7 @@ function check() {
 // This function calculates the multiplication table.
 //One function does everything same a hw5
 function calc() {
+  console.log("CALC")
   //https://stackoverflow.com/questions/39291997/how-to-block-e-in-input-type-number Blocks e,+
   var XStart_inputBox = document.getElementById("number1");
   var XStop_inputBox = document.getElementById("number2");
@@ -172,7 +173,6 @@ function calc() {
   var swapped_X = false;
   var swapped_Y = false;
   var blank = false;
-  console.log(Y_stop.length)
   //Checks if var is empty. This is incase of jquery failing
   if(typeof X_start == 'undefined')
   {
@@ -206,28 +206,32 @@ function calc() {
   // https://stackoverflow.com/questions/4059147/check-if-a-variable-is-a-string-in-javascript Check if var is string
   //////
   if (X_start % 1 != 0) {
-    format += "<p>Number was rounded down.</p><br>";
+    format += "<p>X_Start Number was rounded down.</p><br>";
     X_start = Math.floor(X_start);
+    console.log("ROUND1");
     $("#multi").html(error_format);
-    return;
+    //return;
   }
   if (X_stop % 1 != 0) {
-    format += "<p>Number was rounded down.</p><br>";
+    format += "<p>X_stop Number was rounded down.</p><br>";
     X_stop = Math.floor(X_stop);
+    console.log("ROUND2");
     $("#multi").html(error_format);
-    return;
+    //return;
   }
   if (Y_start % 1 != 0) {
-    format += "<p>Number was rounded down.</p><br>";
+    format += "<p>Y_start Number was rounded down.</p><br>";
     Y_start = Math.floor(Y_start);
+    console.log("ROUND3");
     $("#multi").html(error_format);
-    return;
+    //return;
   }
   if (Y_stop % 1 != 0) {
-    format += "<p>Number was rounded down.</p><br>";
+    format += "<p>Y_stop Number was rounded down.</p><br>";
     Y_stop = Math.floor(Y_stop);
+    console.log("ROUND4");
     $("#multi").html(error_format);
-    return;
+    //return;
   }
   // swap X_start and X_stop if (X_start > X_stop)
   if (X_start > X_stop) {
