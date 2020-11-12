@@ -9,7 +9,6 @@
     // Github: https://bmichaud7.github.io/Inclass5/example.html
 // -->
 
-
 // ADD NEW ITEM TO END OF LIST
 var list = document.getElementsByTagName('ul')[0];
 var newListEnd = document.createElement('li');
