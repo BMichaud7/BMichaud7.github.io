@@ -189,3 +189,7 @@ input {
   font-family: "Amatic SC", Arial, Helvetica, sans-serif;
   text-align: center;
 }
+.error{
+  color: red;
+  font-size: 200%;
+}
