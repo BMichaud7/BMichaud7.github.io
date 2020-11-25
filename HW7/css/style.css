@@ -2,10 +2,10 @@
       Name: Brendan Michaud
       Email: brendan_michaud@student.uml.edu
       Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
-      Date: 10/29/2020
+      Date: 11/25/2020
       Description: First Javascript website
-      Location: ~/bmichaud/public_html/HW5/script.js
-      Github: https://bmichaud7.github.io/HW6/css/style.css
+      Location: ~/bmichaud/public_html/HW7//css/style.css
+      Github: https://bmichaud7.github.io/HW7/css/style.css
       91.461 Assignment: Creating an Interactive Dynamic Table
       Brendan Michaud, UMass Lowell Computer Science,
       Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
@@ -28,10 +28,12 @@ h4 {
   color: rgb(2, 70, 2);
   text-align: center;
 }
+
 h2 {
   color: white;
   text-align: center;
 }
+
 p,
 label {
   color: rgb(4, 58, 4);
@@ -46,26 +48,32 @@ img.album {
   width: 50%;
   height: 50%;
 }
+
 /*Picture size on first carousel*/
 img.pic {
   width: 75%;
   height: 75%;
 }
+
 /*Album boarder color to match color on album artwork*/
 img.lag {
   border: 10px solid navy;
 }
+
 img.beat {
   border: 10px solid darkgreen;
 }
+
 img.vel {
   border: 10px solid yellow;
 }
+
 /* controls GIT image size sections */
 img.GIT {
   width: 50px;
   height: 50x;
 }
+
 /* controls about me sections */
 .aboutme {
   background: darkblue;
@@ -86,27 +94,32 @@ img.GIT {
   width: 50%;
   margin: auto;
 }
+
 /* This container will wrap around all sections */
 .carousel {
   margin: 20px;
 }
+
 /* This container controls the carousel-caption color, size and text font */
 .carousel-caption p {
   font-family: "Amatic SC", Arial, Helvetica, sans-serif;
   font-size: 2em;
   color: white !important;
 }
+
 /* This container controls the carousel next and back button size */
 .carousel-control-prev,
 .carousel-control-next {
   top: 20%;
   bottom: 20%;
 }
+
 /* This container controls the carousel indicators */
 .carousel .carousel-indicators li {
   background-color: #fff;
   background-color: rgba(70, 70, 70, 0.25);
 }
+
 /* This container controls the carousel indicators */
 .carousel .carousel-indicators .active {
   background-color: rgba(70, 70, 70, 0.466);
@@ -118,6 +131,7 @@ hr {
   border: 0;
   border-top: 1px solid rgba(4, 58, 4, 0.13);
 }
+
 /* This container controls the dropdown color and size of text and background */
 .dropdown-menu {
   background-color: gray;
@@ -126,6 +140,7 @@ hr {
   font-family: "Amatic SC", Arial, Helvetica, sans-serif;
   font-size: 30px;
 }
+
 /* This container controls the nav bar links color and size of text */
 .nav-link {
   color: rgb(4, 58, 4);
@@ -133,6 +148,7 @@ hr {
   font-family: "Amatic SC", Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
+
 /* This container controls the nav bar brand color and size of text.
 A brand is Linkedin, Resume and Github links. Its called a brand because of the attached images or logos*/
 .navbar-brand {
@@ -140,21 +156,25 @@ A brand is Linkedin, Resume and Github links. Its called a brand because of the 
   font-family: "Amatic SC", Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
+
 /* This container controls the "Computer Science Courses Taken" list text color."*/
 .list-group-item {
   font-family: "Amatic SC", Arial, Helvetica, sans-serif;
   font-size: 25px;
   color: whitesmoke;
 }
+
 .content {
   text-align: center;
 }
+
 /* Style the left most column and top row to green */
 tbody > tr > td:first-child,
 tbody > tr:first-child > td {
   background-color: rgb(4, 58, 4);
   color: gray;
 }
+
 tbody > tr > td {
   padding: 5px;
   height: 75px;
@@ -166,6 +186,7 @@ tbody > tr > td {
   font-size: 200%;
   font-weight: 1000;
 }
+
 /* https://stackoverflow.com/questions/957537/how-can-i-display-a-javascript-object */
 label {
   display: inline-block;
@@ -173,14 +194,17 @@ label {
   clear: left;
   width: 250px;
 }
+
 input {
   display: inline-block;
   float: left;
 }
+
 /* https://www.w3schools.com/css/css_attribute_selectors.asp */
 [type~="number"] {
   border: 2px solid orange;
 }
+
 /* error messages */
 #errmsg1,
 #errmsg2,
@@ -195,14 +219,15 @@ input {
   color: red;
   font-size: 150%;
 }
-input.error{
+
+input.error {
   color: red;
   font-size: 100%;
 }
-.centerbtn { 
+
+.centerbtn {
   height: 200px;
   position: relative;
-
 }
 
 .center {

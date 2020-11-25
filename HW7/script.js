@@ -2,10 +2,10 @@
       Name: Brendan Michaud
       Email: brendan_michaud@student.uml.edu
       Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
-      Date: 10/29/2020
+      Date: 11/25/2020
       Description: First Javascript website
-      Location: ~/bmichaud/public_html/HW5/script.js
-      Github: https://bmichaud7.github.io/HW6/script.js
+      Location: ~/bmichaud/public_html/HW7/script.js
+      Github: https://bmichaud7.github.io/HW7/script.js
       91.461 Assignment: Creating an Interactive Dynamic Table
       Brendan Michaud, UMass Lowell Computer Science,
       Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
@@ -13,174 +13,187 @@
       -->
 */
 
-
 //These number1-6 function prevent the user from entering e , and +
-
+// This is called when anything is changed and check if its valid calls calc if valid
 function submitauto() {
   // If the form is valid
-  if( $("#formmulti").valid() == true ) {
+  if ($("#formmulti").valid() == true) {
     calc();
   }
 }
+//Unchanged from HW6
 
-
-function number1 () {
+function number1() {
   //called when key is pressed in textbox
   $("#number1").keypress(function (e) {
-     //if the letter is not digit then display error and don't type anything
-     if (e.which != 8 && e.which != 0 && e.which != 45 && e.which != 46 && (e.which < 48 || e.which > 57)) {
-        //display error message
-        $("#errmsg1").html("Digits Only").show().fadeOut(5000);
-               return false;
+    //if the letter is not digit then display error and don't type anything
+    if (
+      e.which != 8 &&
+      e.which != 0 &&
+      e.which != 45 &&
+      e.which != 46 &&
+      (e.which < 48 || e.which > 57)
+    ) {
+      //display error message
+      $("#errmsg1").html("Digits Only").show().fadeOut(5000);
+      return false;
     }
-   });
+  });
 }
-function number2 () {
+function number2() {
   //called when key is pressed in textbox
   $("#number2").keypress(function (e) {
     // console.log(e.which)
-     //if the letter is not digit then display error and don't type anything
-     if (e.which != 8 && e.which != 0 && e.which != 45 && e.which != 46 && (e.which < 48 || e.which > 57)) {
-        //display error message
-        $("#errmsg2").html("Digits Only").show().fadeOut(5000);
-               return false;
+    //if the letter is not digit then display error and don't type anything
+    if (
+      e.which != 8 &&
+      e.which != 0 &&
+      e.which != 45 &&
+      e.which != 46 &&
+      (e.which < 48 || e.which > 57)
+    ) {
+      //display error message
+      $("#errmsg2").html("Digits Only").show().fadeOut(5000);
+      return false;
     }
-   });
+  });
 }
-function number5 () {
+function number5() {
   //called when key is pressed in textbox
   $("#number7").keypress(function (e) {
-     //if the letter is not digit then display error and don't type anything
-     if (e.which != 8 && e.which != 0 && e.which != 45 && e.which != 46 && (e.which < 48 || e.which > 57)) {
-        //display error message
-        $("#errmsg3").html("Digits Only").show().fadeOut(5000);
-               return false;
+    //if the letter is not digit then display error and don't type anything
+    if (
+      e.which != 8 &&
+      e.which != 0 &&
+      e.which != 45 &&
+      e.which != 46 &&
+      (e.which < 48 || e.which > 57)
+    ) {
+      //display error message
+      $("#errmsg3").html("Digits Only").show().fadeOut(5000);
+      return false;
     }
-   });
+  });
 }
 function number6() {
   //called when key is pressed in textbox
   $("#number6").keypress(function (e) {
-     //if the letter is not digit then display error and don't type anything
-     if (e.which != 8 && e.which != 0 && e.which != 45 && e.which != 46 && (e.which < 48 || e.which > 57)) {
-        //display error message
-        $("#errmsg4").html("Digits Only").show().fadeOut(5000);
-               return false;
+    //if the letter is not digit then display error and don't type anything
+    if (
+      e.which != 8 &&
+      e.which != 0 &&
+      e.which != 45 &&
+      e.which != 46 &&
+      (e.which < 48 || e.which > 57)
+    ) {
+      //display error message
+      $("#errmsg4").html("Digits Only").show().fadeOut(5000);
+      return false;
     }
-   });
-
+  });
 }
-
 
 //This function uses jQuery Validation plugin was having a problem with e and + so used another method above
 function check() {
-
- //https://jqueryvalidation.org/digits-method/?__cf_chl_jschl_tk__=dc5443ad1c221c5a343ee7f0e476cd3751f9c953-1605047934-0-AQpnZpmZxNt4uQHrnc1B7lnQK_tW1VTgkfrPBPfBWfur944on3dpy0OJsFx1MpcKrvmaU2lS94MxftXODFfcU41tYxnbR_Y4C4FSD64Mq7AbnA01NvLf5W6hClEpcFLOlbagU__LI-g1NBoWLA9pOlUb4gZQY1q4TiBStelFPMKkVBZaL8NR8YwrM5Bpz74O9RTemCU30OX7dLs8dx8Kh9a3EV6o19M9vIRCL7HqJSZo-NFzrk1_1-wXK0sx-zJZhfp1uv33ydzdqyOEGX--n6jyu8PWYo5WMEXY_5WygWcx
+  //https://jqueryvalidation.org/digits-method/?__cf_chl_jschl_tk__=dc5443ad1c221c5a343ee7f0e476cd3751f9c953-1605047934-0-AQpnZpmZxNt4uQHrnc1B7lnQK_tW1VTgkfrPBPfBWfur944on3dpy0OJsFx1MpcKrvmaU2lS94MxftXODFfcU41tYxnbR_Y4C4FSD64Mq7AbnA01NvLf5W6hClEpcFLOlbagU__LI-g1NBoWLA9pOlUb4gZQY1q4TiBStelFPMKkVBZaL8NR8YwrM5Bpz74O9RTemCU30OX7dLs8dx8Kh9a3EV6o19M9vIRCL7HqJSZo-NFzrk1_1-wXK0sx-zJZhfp1uv33ydzdqyOEGX--n6jyu8PWYo5WMEXY_5WygWcx
 
   $("#formmulti").validate({
     // Rules for validating the form.
 
-    
     rules: {
       number1: {
-          required: true,
-          number: true,
-          max: 50,
-          min: -50
+        required: true,
+        number: true,
+        max: 50,
+        min: -50,
       },
       number2: {
-          required: true,
-          number: true,
-          max: 50,
-          min: -50
+        required: true,
+        number: true,
+        max: 50,
+        min: -50,
       },
       number3: {
-          required: true,
-          number: true,
-          max: 50,
-          min: -50
+        required: true,
+        number: true,
+        max: 50,
+        min: -50,
       },
       number6: {
-          required: true,
-          number: true,
-          max: 50,
-          min: -50
+        required: true,
+        number: true,
+        max: 50,
+        min: -50,
       },
       number7: {
         required: true,
         number: true,
         max: 50,
-        min: -50
-    }
-  },
+        min: -50,
+      },
+    },
 
-  // Messages if error shows up
-  messages: {
+    // Messages if error shows up
+    messages: {
       number1: {
-          required: "Please enter a starting X",
-          number: "Please only enter numbers",
-          max: "Please enter a number less than 50",
-          min: "Please enter a number greater than -50"
+        required: "Please enter a starting X",
+        number: "Please only enter numbers",
+        max: "Please enter a number less than 50",
+        min: "Please enter a number greater than -50",
       },
       number2: {
-          required: "Please enter an ending X",
-          number: "Please only enter numbers",
-          max: "Please enter a number less than 50",
-          min: "Please enter a number greater than -50"
+        required: "Please enter an ending X",
+        number: "Please only enter numbers",
+        max: "Please enter a number less than 50",
+        min: "Please enter a number greater than -50",
       },
       number6: {
-          required: "Please enter an ending Y",
-          number: "Please only enter numbers",
-          max: "Please enter a number less than 50",
-          min: "Please enter a number greater than -50"
+        required: "Please enter an ending Y",
+        number: "Please only enter numbers",
+        max: "Please enter a number less than 50",
+        min: "Please enter a number greater than -50",
       },
       number7: {
         required: "Please enter a starting Y",
         number: "Please only enter numbers",
         max: "Please enter a number less than 50",
-        min: "Please enter a number greater than -50"
+        min: "Please enter a number greater than -50",
+      },
     },
-  },
 
     // This gets called when valid.
-    submitHandler: function() {
+    submitHandler: function () {
       calc();
-      console.log("TRUE")
+      console.log("TRUE");
       return true;
     },
-      //else this
-    errorPlacement: function(error, element) {
+    //else this
+    errorPlacement: function (error, element) {
       error.insertAfter(element);
     },
-    onkeyup: function(element, event ) {
+    onkeyup: function (element, event) {
       // Call the auto submit function on keyup, so the user does not have to
       // press the enter button.
       submitauto();
-    }
+    },
   });
   // console.log("END")
-
-
-  
-
 }
-
-
 
 // This function calculates the multiplication table.
 //One function does everything same a hw5
 function calc() {
-  console.log("CALC")
+  console.log("CALC");
   //https://stackoverflow.com/questions/39291997/how-to-block-e-in-input-type-number Blocks e,+
   var XStart_inputBox = document.getElementById("number1");
   var XStop_inputBox = document.getElementById("number2");
   var YStart_inputBox = document.getElementById("number7");
   var YStop_inputBox = document.getElementById("number6");
 
-  console.log(XStart_inputBox.value)
-  console.log(XStop_inputBox.value)
-  console.log(YStart_inputBox.value)
-  console.log(YStop_inputBox.value)
+  console.log(XStart_inputBox.value);
+  console.log(XStop_inputBox.value);
+  console.log(YStart_inputBox.value);
+  console.log(YStop_inputBox.value);
 
   var error_format = "";
   var X_start = Number(XStart_inputBox.value);
@@ -192,32 +205,28 @@ function calc() {
   var swapped_Y = false;
   var blank = false;
   //Checks if var is empty. This is incase of jquery failing
-  if(typeof X_start == 'undefined')
-  {
+  if (typeof X_start == "undefined") {
     error_format = "<p>Start Range X no number entered </p>";
     $("#multi").html(error_format);
     blank = true;
   }
-  if(typeof X_stop == 'undefined')
-  {
+  if (typeof X_stop == "undefined") {
     error_format = "<p>End Range Y no number entered </p>";
     $("#multi").html(error_format);
     blank = true;
   }
-  if(typeof Y_start == 'undefined')
-  {
+  if (typeof Y_start == "undefined") {
     error_format = "<p>Start Range Y no number entered .</p>";
     $("#multi").html(error_format);
     blank = true;
   }
 
-  if(typeof Y_stop == 'undefined')
-  {
+  if (typeof Y_stop == "undefined") {
     error_format = "<p>End Range Y no number entered .</p>";
     $("#multi").html(error_format);
     blank = true;
   }
-  if(blank == true){
+  if (blank == true) {
     $("#multi").html(error_format);
     return;
   }

@@ -1,4 +1,21 @@
 <!-- https://jqueryui.com/tabs/ -->
+<!-- /*
+      Name: Brendan Michaud
+      Email: brendan_michaud@student.uml.edu
+      Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
+      Date: 11/25/2020
+      Description: First Javascript website
+      Location: ~/bmichaud/public_html/HW7/index.html
+      Github: https://bmichaud7.github.io/HW7/index.html
+      91.461 Assignment: Creating an Interactive Dynamic Table
+      Brendan Michaud, UMass Lowell Computer Science,
+      Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
+      freely copied or excerpted for educational purposes with credit to the author.
+      
+*/ -->
+
+
+
 <!doctype html>
 <html lang="en">
 
@@ -90,19 +107,6 @@
     </div>
   </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="container">
 
     <br>
@@ -123,35 +127,41 @@
         <form onsubmit="return false" name="formmulti" id="formmulti">
           <div>
             <label>Start Range X: </label>
-            <input type="text" name="number1" id="number1" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg1"></h2><br /><br /><br/>
+            <input type="text" name="number1" id="number1" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg1"></h2>
+            <br /><br /><br />
             <div id="slider_X_start"></div> <br>
           </div>
           <div>
             <label>End Range X: </label>
-            <input type="text" name="number2" id="number2" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg2"></h2><br /><br /><br />
+            <input type="text" name="number2" id="number2" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg2"></h2>
+            <br /><br /><br />
             <div id="slider_X_stop"></div> <br>
           </div>
           <div>
             <label>Start Range Y: </label>
-            <input type="text" name="number7" id="number7" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg3"></h2><br /><br /><br />
+            <input type="text" name="number7" id="number7" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg3"></h2>
+            <br /><br /><br />
             <div id="slider_Y_start"></div> <br>
           </div>
           <div>
             <label>End Range Y: </label>
-            <input type="text" name="number6" id="number6" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg4"></h2><br /><br /><br />
+            <input type="text" name="number6" id="number6" onchange="submitauto()" /><br>&nbsp;<h2 id="errmsg4"></h2>
+            <br /><br /><br />
             <div id="slider_Y_stop"></div> <br>
           </div> <br /><br />
           <!-- <input type="submit" value="Submit " style="margin: 0 auto;" onclick="return calc()"> -->
 
-         
+
         </form>
-        
+
       </div>
     </div>
     <div class="centerbtn">
       <div class="center">
-    <button id="add_tab" onclick="return addNewtab()">Add Tab</button>
-    <button id="remove_tab" onclick="return removeTab()">Remove</button>
+        <!-- added new buttons to add a tab based on current displaying table and a button to clear all tabs
+        I removed the submit button because it was not needed anymore. -->
+        <button id="add_tab" onclick="return addNewtab()">Add Tab</button>
+        <button id="remove_tab" onclick="return removeTab()">Remove</button>
       </div>
       <br><br>
     </div>
@@ -159,27 +169,26 @@
     <div style="overflow-x:auto" ; id="multi"> </div>
     <br><br>
   </div>
-  
-  
+
+
   <div id="tabs">
     <ul>
 
     </ul>
   </div>
   </div>
+  <!-- when the doc is ready call these -->
   <script>
-    $(document).ready(function() {
-        check();  
-        number1();
-        number2();
-        number5();
-        number6(); 
-        slider();
-        
-  
-     
+    $(document).ready(function () {
+      check();
+      number1();
+      number2();
+      number5();
+      number6();
+      slider();
+
     });
-  </script> 
+  </script>
 </body>
 
 </html>
