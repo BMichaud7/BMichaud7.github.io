@@ -1,0 +1,215 @@
+/*   /*
+      Name: Brendan Michaud
+      Email: brendan_michaud@student.uml.edu
+      Affiliation: Student at UMass Lowell in 91.461 GUI Programming I
+      Date: 10/29/2020
+      Description: First Javascript website
+      Location: ~/bmichaud/public_html/HW5/script.js
+      Github: https://bmichaud7.github.io/HW6/css/style.css
+      91.461 Assignment: Creating an Interactive Dynamic Table
+      Brendan Michaud, UMass Lowell Computer Science,
+      Copyright (c) 2020 by Brendan Michaud. All rights reserved. May be
+      freely copied or excerpted for educational purposes with credit to the author.
+      -->
+*/
+
+html,
+body {
+  background-color: darkgray;
+}
+
+h1,
+h3 {
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+}
+h4 {
+  color: rgb(2, 70, 2);
+  text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+p,
+label {
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+/* album art size*/
+img.album {
+  border: 0;
+  width: 50%;
+  height: 50%;
+}
+/*Picture size on first carousel*/
+img.pic {
+  width: 75%;
+  height: 75%;
+}
+/*Album boarder color to match color on album artwork*/
+img.lag {
+  border: 10px solid navy;
+}
+img.beat {
+  border: 10px solid darkgreen;
+}
+img.vel {
+  border: 10px solid yellow;
+}
+/* controls GIT image size sections */
+img.GIT {
+  width: 50px;
+  height: 50x;
+}
+/* controls about me sections */
+.aboutme {
+  background: darkblue;
+  border: 1px black solid;
+  border-radius: 25px;
+  padding-left: 15px;
+}
+
+.aboutme p {
+  color: white;
+}
+.aboutme h3 {
+  color: white;
+}
+
+/* This container will wrap around all sections */
+.container {
+  width: 50%;
+  margin: auto;
+}
+/* This container will wrap around all sections */
+.carousel {
+  margin: 20px;
+}
+/* This container controls the carousel-caption color, size and text font */
+.carousel-caption p {
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: white !important;
+}
+/* This container controls the carousel next and back button size */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 20%;
+  bottom: 20%;
+}
+/* This container controls the carousel indicators */
+.carousel .carousel-indicators li {
+  background-color: #fff;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+/* This container controls the carousel indicators */
+.carousel .carousel-indicators .active {
+  background-color: rgba(70, 70, 70, 0.466);
+}
+/* This container controls the horizontal divider color and size */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(4, 58, 4, 0.13);
+}
+/* This container controls the dropdown color and size of text and background */
+.dropdown-menu {
+  background-color: gray;
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+/* This container controls the nav bar links color and size of text */
+.nav-link {
+  color: rgb(4, 58, 4);
+  text-align: center;
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+/* This container controls the nav bar brand color and size of text.
+A brand is Linkedin, Resume and Github links. Its called a brand because of the attached images or logos*/
+.navbar-brand {
+  color: rgb(4, 58, 4);
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+/* This container controls the "Computer Science Courses Taken" list text color."*/
+.list-group-item {
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: whitesmoke;
+}
+.content {
+  text-align: center;
+}
+/* Style the left most column and top row to green */
+tbody > tr > td:first-child,
+tbody > tr:first-child > td {
+  background-color: rgb(4, 58, 4);
+  color: gray;
+}
+tbody > tr > td {
+  padding: 5px;
+  height: 75px;
+  width: 75px;
+  background-color: #292b2c;
+  color: rgb(247, 247, 247);
+  text-align: center;
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  font-weight: 1000;
+}
+/* https://stackoverflow.com/questions/957537/how-can-i-display-a-javascript-object */
+label {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 250px;
+}
+input {
+  display: inline-block;
+  float: left;
+}
+/* https://www.w3schools.com/css/css_attribute_selectors.asp */
+[type~="number"] {
+  border: 2px solid orange;
+}
+/* error messages */
+#errmsg1,
+#errmsg2,
+#errmsg3,
+#errmsg4 {
+  color: red;
+  font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 150%;
+}
+input.error{
+  color: red;
+  font-size: 100%;
+}
+.centerbtn { 
+  height: 200px;
+  position: relative;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
