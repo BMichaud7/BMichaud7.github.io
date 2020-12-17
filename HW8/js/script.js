@@ -226,7 +226,7 @@ function ButtonListeners() {
 function Dictionary() {
   //request the text dictionary
   $.get(
-    "https:raw.githubusercontent.com/BMichaud7/BMichaud7.github.io/master/dict.txt",
+    "https://raw.githubusercontent.com/BMichaud7/BMichaud7.github.io/master/dict.txt",
     function (txt, status) {
       if (status == "success") {
         // Get an array of all the words
