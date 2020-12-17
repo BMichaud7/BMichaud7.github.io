@@ -13,7 +13,7 @@
 */
 
 /* For scrabble part of project i.e image size and stuff like that */
-/* double word score bonus */
+/* double word */
 
 #spot2 {
   background-image: url("../images/double_word_score.png");
@@ -21,7 +21,7 @@
   background-repeat: no-repeat;
 }
 
-/* triple letter score bonus */
+/* triple letter  */
 
 #spot6 {
   background-image: url("../images/triple_letter_score.png");
@@ -64,8 +64,10 @@
   height: 98%;
   width: 13.4%;
   display: inline-block;
+  background-color: rgb(2, 70, 2);
   padding: 0;
   margin: 0;
+
 }
 
 /* divs that hold hand tiles */
@@ -78,7 +80,7 @@
 #tilespawn6,
 #tilespawn7 {
   border: 1px solid black;
-  height: 98%;
+  height: 100%;
   width: 13.4%;
   display: inline-block;
   padding: 0;
