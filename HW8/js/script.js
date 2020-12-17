@@ -525,11 +525,11 @@ function ResetAllLetters() {
       if ($("#spot" + i).attr("name") == "_") {
         //checking for _ letter
         $("#spot" + i).removeAttr("name");
-        //removing name attr "_"
+        //removing name attr _
         $("#spot" + i)
           .children("img")
           .attr("id", "_");
-        //setting img id to "_"
+        //setting img id to _
         $("#spot" + i)
           .children("img")
           .attr("src", "Scrabble_Tiles/" + GetImage("_"));
